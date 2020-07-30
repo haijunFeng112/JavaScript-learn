@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>验证码</title>
+		<link rel="stylesheet" type="text/css" href="demo.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="inputBox">
+				<input type="text" placeholder="请输入验证码">
+				<span></span>
+			</div>
+			<p class="error"></p>
+			<div class="canvasBox">
+				<div class="imgBox">
+					<canvas id="myCanvas" width="300" height="80"></canvas>
+				</div>
+				<input type="button" class="refresh" />
+			</div>
+			<button type="button" class="submit">submit</button>
+		</div>
+		
+		<script type="text/javascript" src="jquery-3.5.0.min.js"></script>
+		<script type="text/javascript" src="demo.js"></script>
+	</body>
+</html>
