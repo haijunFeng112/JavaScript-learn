@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <style>
+        #banner{
+            height: 882px;
+            width: 1920px;
+            
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="banner">
+
+    </div>
+
+    <script src="./plugin/banner.js"></script>
+    <script>
+        var bannerDiv = document.getElementById('banner');
+        createBannerArea(bannerDiv,[
+            {imgUrl:"./img/pic0.jpg",link:"http://www.baidu.com"},
+            {imgUrl:"./img/pic1.jpg",link:"http://www.baidu.com"},
+            {imgUrl:"./img/pic2.jpg",link:"http://www.baidu.com"},
+        ])
+    </script>
+</body>
+</html>
