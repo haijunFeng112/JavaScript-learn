@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D轮播图</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper" id="wrap">
+        <img src="./images/img-1.jpg" alt="">
+        <img src="./images/img-2.jpg" alt="">
+        <img src="./images/img-3.jpg" alt="">
+        <img src="./images/img-4.jpg" alt="">
+        <img src="./images/img-5.jpg" alt="">
+    </div>    
+    <script src="./jquery-3.5.0.min.js"></script>
+    <!-- 封装 -->
+    <script src="./index.js"></script>
+    <!-- 调用 -->
+    <script>
+        $('#wrap').slider({
+            curDisplay: 0,
+            autoPlay: true,
+            interval: 2000
+        })
+    </script>
+</body>
+</html>
